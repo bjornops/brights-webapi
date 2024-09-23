@@ -24,4 +24,7 @@ jobs:
           resourceGroup: rg-bjo-test-01
           containerAppName: ca-bjo-test-01
           acrName: brightstraining24fall.azurecr.io
+          acrUsername: ${{ secrets.REGISTRY_USER }}
+          acrPassword: ${{ secrets.REGISTRY_PASSWORD }}
           imageToDeploy: brightstraining24fall.azurecr.io/bjorn/dotnetapi:latest
+
